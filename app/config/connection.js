@@ -9,7 +9,7 @@ var connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "password",
-    database: "chirpy-1"  
+    database: "chirpyY"  
 })
 
 //Connect to the mysql database
