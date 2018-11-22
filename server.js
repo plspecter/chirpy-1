@@ -20,7 +20,7 @@ require("./app/routes/api-routes.js")(app);
 //Starts the server to being listening
 
 app.listen(PORT, function() {
-console.log("App listening to PORT: " + PORT);
+console.log("App listening on: http://localhost: " + PORT);
 
 });
 

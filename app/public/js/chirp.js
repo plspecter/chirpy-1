@@ -28,7 +28,7 @@ $("#chirp-submit").on("click", function (event) {
     var newChirp = {
         author: $("#author").val().trim(),
         body: $("#chirp-box").val().trim(),
-        created_at: moment().forat("YYYY-MM-DD HH:mm:ss")
+        created_at: moment().format("YYYY-MM-DD HH:mm:ss")
     };
     console.log(newChirp);
 
