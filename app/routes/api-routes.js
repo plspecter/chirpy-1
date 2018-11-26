@@ -12,6 +12,7 @@ module.exports = function (app) {
         var databaseQuery = "SELECT * FROM chirps";
 
         connection.query(databaseQuery, function (err, result) {
+            console.log(err)
             if (err) throw err;
             res.json(result);
         });
@@ -25,6 +26,7 @@ module.exports = function (app) {
 
         var databaseQuery = "INSERT INTO chirps (authoer, body, created_at VALUES (?,?,?)";
         connection.query(databaseQuery, [req.body.author, req.body.body, req.body.created_at]), function (err, result) {
+            console.log(err)
             if (err) throw err;
             console.log("Chirp Successfully saved");
             res.end();
